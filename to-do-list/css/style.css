@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top right, #013308, #086830);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.day-box, h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #07793a;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px solid #069e2d;
+    width: 30%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: 600;
+    gap: 1em;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #03ce1e;
+    padding: 5px;
+    background-color: #0d2513;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.list input {
+    order: 0;
+    margin-right: 10px;
+}
+
+#newTask {
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid #022507;
+    border-radius: 15px;
+}
+
+
+input:checked ~ label {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+button {
+    background-color: #04a32c;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: 2px solid #105e24;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #105e24;
+    border: 2px solid #04a32c;
+}
+
+.close {
+    width: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/checklist.png" type="image/x-png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Check list</title>
+</head>
+<body>
+    <h1>Welcome to your newest check list!</h1>
+    <div class="container">
+        <!-- Dia e data atual -->
+        <div class="day-box">
+            <p id="dia"></p>
+            <p id="data"></p>
+        </div>
+        <!-- Itens da lista  -->
+        <div class="list">
+            <!-- Adicionar a tarefa -->
+            <div class="novaTarefa">
+                <input type="text" name="" id="newTask" placeholder="Write your task here">
+                <button id="addTask" onclick="tarefaNova()">Add</button>
+            </div>
+            <!-- Tarefa 1 -->
+            <div class="list-item">
+                <input type="checkbox" name="" id="t1">
+                <label for="t1">Make the bed</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+            <!-- Tarefa 2 -->           
+            <div class="list-item">
+                <input type="checkbox" name="" id="t2">
+                <label for="t2">Have lunch</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+            <!-- Tarefa 3 -->
+            <div class="list-item">
+                <input type="checkbox" name="" id="t3">
+                <label for="t3">Do any physical exercise</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+            <!-- Tarefa 4 -->           
+            <div class="list-item">
+                <input type="checkbox" name="" id="t4">
+                <label for="t4">Read for 20 minutes</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+            <!-- Tarefa 5 -->           
+            <div class="list-item">
+                <input type="checkbox" name="" id="t5">
+                <label for="t5">Check bank balance</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+            <!-- Tarefa 6 -->
+            <div class="list-item">
+                <input type="checkbox" name="" id="t6">
+                <label for="t6">Have dinner</label>
+                <img src="img/fechar.png" class="close" alt="Fechar">
+            </div>
+        </div>
+    </div>
+    <h3>Developed by Guilherme Nascimento &copy; 2024.</h3>
+    <script src="js/index.js"></script>
+    <script src="js/newTask.js"></script>
+    <script src="js/remover.js"></script>
+</body>
+</html>
